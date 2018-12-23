@@ -1,4 +1,6 @@
-def function():
-    print("hello world")
+def functionRead(filePointer):
+    fileString = filePointer.read()
+    print(fileString)
 
-function()
+filePointer = open("textFile.txt", 'r')
+functionRead(filePointer)
